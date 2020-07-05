@@ -1,0 +1,16 @@
+[user]
+	name = Adam Wood
+	email = contact@adamwood.org
+[core]
+	autocrlf = false
+[alias]
+	co = checkout
+	st = status
+	rbi = rebase -i
+	rbs = rebase -i --autosquash
+	logp = log --pretty --oneline --graph --decorate
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
